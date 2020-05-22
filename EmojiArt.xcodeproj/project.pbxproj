@@ -19,6 +19,7 @@
 		0E4B02552475E95B00A6B2F2 /* EmojiCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4B02542475E95B00A6B2F2 /* EmojiCollectionViewCell.swift */; };
 		0E4B02572475FD0800A6B2F2 /* EmojiArtView+Gestures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4B02562475FD0800A6B2F2 /* EmojiArtView+Gestures.swift */; };
 		0E4B0259247604A200A6B2F2 /* TextFieldCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4B0258247604A200A6B2F2 /* TextFieldCollectionView.swift */; };
+		0E7CEDC42478894C00D9383C /* EmojiArt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7CEDC32478894C00D9383C /* EmojiArt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		0E4B02542475E95B00A6B2F2 /* EmojiCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiCollectionViewCell.swift; sourceTree = "<group>"; };
 		0E4B02562475FD0800A6B2F2 /* EmojiArtView+Gestures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EmojiArtView+Gestures.swift"; sourceTree = "<group>"; };
 		0E4B0258247604A200A6B2F2 /* TextFieldCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldCollectionView.swift; sourceTree = "<group>"; };
+		0E7CEDC32478894C00D9383C /* EmojiArt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiArt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,9 +76,8 @@
 				0E4B02542475E95B00A6B2F2 /* EmojiCollectionViewCell.swift */,
 				0E4B02522475D13B00A6B2F2 /* EmojiArtDocumentTableViewController.swift */,
 				0E4B024C24759A6100A6B2F2 /* EmojiArtView.swift */,
-				0E4B02562475FD0800A6B2F2 /* EmojiArtView+Gestures.swift */,
 				0E4B024E2475AAB800A6B2F2 /* EmojiArtViewController.swift */,
-				0E4B02502475ACB400A6B2F2 /* Utilities.swift */,
+				0E7CEDC32478894C00D9383C /* EmojiArt.swift */,
 				0E4B02452475919300A6B2F2 /* Info.plist */,
 			);
 			path = EmojiArt;
@@ -89,6 +90,8 @@
 				0E4B02392475919200A6B2F2 /* SceneDelegate.swift */,
 				0E4B02402475919300A6B2F2 /* Assets.xcassets */,
 				0E4B02422475919300A6B2F2 /* LaunchScreen.storyboard */,
+				0E4B02562475FD0800A6B2F2 /* EmojiArtView+Gestures.swift */,
+				0E4B02502475ACB400A6B2F2 /* Utilities.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 			files = (
 				0E4B02552475E95B00A6B2F2 /* EmojiCollectionViewCell.swift in Sources */,
 				0E4B02572475FD0800A6B2F2 /* EmojiArtView+Gestures.swift in Sources */,
+				0E7CEDC42478894C00D9383C /* EmojiArt.swift in Sources */,
 				0E4B0259247604A200A6B2F2 /* TextFieldCollectionView.swift in Sources */,
 				0E4B02382475919200A6B2F2 /* AppDelegate.swift in Sources */,
 				0E4B02532475D13B00A6B2F2 /* EmojiArtDocumentTableViewController.swift in Sources */,
@@ -319,6 +323,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J2C764CY4K;
 				INFOPLIST_FILE = EmojiArt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -337,6 +342,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J2C764CY4K;
 				INFOPLIST_FILE = EmojiArt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
