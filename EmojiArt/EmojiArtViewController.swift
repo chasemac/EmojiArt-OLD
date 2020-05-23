@@ -51,6 +51,46 @@ class EmojiArtViewController: UIViewController, UIDropInteractionDelegate, UIScr
         }
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if let url = try? FileManager.default.url(
+            for: .documentDirectory,
+            in: .userDomainMask,
+            appropriateFor: nil,
+            create: true
+        ).appendingPathComponent("Untitled.json") {
+            if let jsonData = try? Data(contentsOf: url) {
+                emojiArt = EmojiArt(json: jsonData)
+            }
+
+        }
+        
+    }
+    
+    // MARK: - Storyboard
+    
+    @IBAction func save(_ sender: UIBarButtonItem) {
+        if let json = emojiArt?.json {
+            if let url = try? FileManager.default.url(
+                for: .documentDirectory,
+                in: .userDomainMask,
+                appropriateFor: nil,
+                create: true
+            ).appendingPathComponent("Untitled.json") {
+                do {
+                     try json.write(to: url)
+                    print("Saved successfully")
+                } catch let error {
+                    print("Couldn't save \(error)")
+                }
+
+            }
+            
+        }
+    }
+    
+    
     @IBOutlet weak var dropZone: UIView! {
         didSet {
             dropZone.addInteraction(UIDropInteraction(delegate: self))
